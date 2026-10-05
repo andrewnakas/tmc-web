@@ -1,0 +1,43 @@
+# No ROMs, and nothing extracted from one, ever enters this repository.
+*.nes
+*.gb
+*.gbc
+*.sfc
+*.smc
+*.md5
+*.gba
+*.z64
+*.iso
+*.gcm
+*.rvz
+*.sav
+*.srm
+baserom*
+tmc.gba
+tmc.elf
+tmc_*.gba
+tmc_*.elf
+
+# Build trees and extracted assets (asset_processor cuts ~13.9 MB out of the
+# user's own cartridge dump into here at build time).
+build/
+# Upstream clones live here for reference; neither is vendored and neither is
+# mine to redistribute. Both also carry their own .git.
+upstream/
+upstream/tmc/build/
+upstream/tmc/tools/bin/
+upstream/tmc/tools/lib/
+upstream/tmc/tools/include/
+upstream/tmc/tools/cmake-build/
+upstream/tmc/tools/agbcc/
+ref-picori/
+pylibs/
+dl/
+
+# Browser target build output and generated symbol tables.
+web/dist/
+web/test/build/
+web/test/core-node.js
+web/test/core-node.wasm
+__pycache__/
+*.pyc
